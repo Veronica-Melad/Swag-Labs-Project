@@ -17,10 +17,10 @@ import utility.SettingUpWebDriver;
 
 public class ProductPageCompTest extends ProductPageComp {
 	@BeforeMethod
-public void ProductPage() throws InterruptedException {
+public void ProductPage(ITestResult result) throws Exception {
 		
 		SettingUpWebDriver Browser=new SettingUpWebDriver();
-		Browser.OpenBrowser();
+		Browser.OpenBrowser(result);
 		LoginPageComp loginPage=new LoginPageComp();
 		loginPage.CheckValidData();
 		HomePageComp homePage=new HomePageComp();
@@ -73,7 +73,7 @@ public void ProductPage() throws InterruptedException {
 	
 	
 	@AfterMethod
-	public void Close(ITestResult result) throws InterruptedException {
+	public void Close(ITestResult result) throws Exception {
      CloseDriver(result);
 }
 

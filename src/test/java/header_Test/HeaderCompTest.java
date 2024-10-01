@@ -15,11 +15,11 @@ import utility.SettingUpWebDriver;
 public class HeaderCompTest extends HeaderComp {
 	
 	@BeforeMethod()
-	public void OpenHeader() {
+	public void OpenHeader(ITestResult result) throws Exception {
 		
 		   //Open Swag Labs
 		    SettingUpWebDriver Browser=new SettingUpWebDriver();
-		    Browser.OpenBrowser();
+		    Browser.OpenBrowser(result);
 		    //Open Login Page and enter valid data
 			LoginPageComp LoginPage=new LoginPageComp();
 			LoginPage.CheckValidData();
@@ -60,7 +60,7 @@ public class HeaderCompTest extends HeaderComp {
 	
 
 	@AfterMethod
-	public void Close(ITestResult result) throws InterruptedException {
+	public void Close(ITestResult result) throws Exception {
      CloseDriver(result);
 }
 

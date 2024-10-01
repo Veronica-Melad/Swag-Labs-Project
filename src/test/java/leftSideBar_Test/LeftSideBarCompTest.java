@@ -15,10 +15,10 @@ public class LeftSideBarCompTest extends LeftSideBarComp{
 	
 
 	@BeforeMethod()
-	public void OpenHomePage() {
+	public void OpenHomePage(ITestResult result) throws Exception {
 		
 		    SettingUpWebDriver Browser=new SettingUpWebDriver();
-		    Browser.OpenBrowser();
+		    Browser.OpenBrowser(result);
 			LoginPageComp loginPage=new LoginPageComp();
 			loginPage.CheckValidData();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -71,7 +71,7 @@ public class LeftSideBarCompTest extends LeftSideBarComp{
 	
 
 	@AfterMethod
-	public void Close(ITestResult result) throws InterruptedException {
+	public void Close(ITestResult result) throws Exception {
      CloseDriver(result);
 }
 

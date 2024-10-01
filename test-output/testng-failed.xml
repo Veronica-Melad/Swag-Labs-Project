@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="leftSideBar_Test.LeftSideBarCompTest">
+      <class name="fb.FaceBook">
         <methods>
-          <include name="CloseBrowser"/>
-          <include name="CheckAllItems"/>
-          <include name="OpenHomePage"/>
+          <include name="OpenFacebookPage"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- leftSideBar_Test.LeftSideBarCompTest -->
+      </class> <!-- fb.FaceBook -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

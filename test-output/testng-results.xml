@@ -1,203 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-23T01:36:41 EEST" name="Default suite" finished-at="2024-09-23T01:37:33 EEST" duration-ms="51638">
+  <suite started-at="2024-10-01T17:55:35 EEST" name="Default suite" finished-at="2024-10-01T17:55:45 EEST" duration-ms="10055">
     <groups>
     </groups>
-    <test started-at="2024-09-23T01:36:41 EEST" name="Default test" finished-at="2024-09-23T01:37:33 EEST" duration-ms="51638">
-      <class name="homePage_Test.HomePageCompTest">
-        <test-method is-config="true" signature="OpenHomePage()[pri:0, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:36:41 EEST" name="OpenHomePage" finished-at="2024-09-23T01:36:45 EEST" duration-ms="4066" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenHomePage -->
-        <test-method signature="CheckHeader()[pri:1, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:36:45 EEST" name="CheckHeader" finished-at="2024-09-23T01:36:47 EEST" duration-ms="1261" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckHeader -->
-        <test-method is-config="true" signature="Close(org.testng.ITestResult)[pri:0, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:36:47 EEST" name="Close" finished-at="2024-09-23T01:36:48 EEST" duration-ms="1345" status="PASS">
+    <test started-at="2024-10-01T17:55:35 EEST" name="Default test" finished-at="2024-10-01T17:55:45 EEST" duration-ms="10055">
+      <class name="footer_Test.FooterCompTest">
+        <test-method is-config="true" signature="OpenHeader(org.testng.ITestResult)[pri:0, instance:footer_Test.FooterCompTest@60975100]" started-at="2024-10-01T17:55:35 EEST" name="OpenHeader" finished-at="2024-10-01T17:55:43 EEST" duration-ms="7858" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CheckHeader status=SUCCESS method=HomePageCompTest.CheckHeader()[pri:1, instance:homePage_Test.HomePageCompTest@1df8b5b8] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=FooterCompTest.CheckFooterContainer()[pri:1, instance:footer_Test.FooterCompTest@60975100] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenHeader -->
+        <test-method signature="CheckFooterContainer()[pri:1, instance:footer_Test.FooterCompTest@60975100]" started-at="2024-10-01T17:55:43 EEST" name="CheckFooterContainer" finished-at="2024-10-01T17:55:43 EEST" duration-ms="244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckFooterContainer -->
+        <test-method is-config="true" signature="Close(org.testng.ITestResult)[pri:0, instance:footer_Test.FooterCompTest@60975100]" started-at="2024-10-01T17:55:43 EEST" name="Close" finished-at="2024-10-01T17:55:45 EEST" duration-ms="1646" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CheckFooterContainer status=SUCCESS method=FooterCompTest.CheckFooterContainer()[pri:1, instance:footer_Test.FooterCompTest@60975100] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Close -->
-        <test-method is-config="true" signature="OpenHomePage()[pri:0, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:36:48 EEST" name="OpenHomePage" finished-at="2024-09-23T01:36:51 EEST" duration-ms="3370" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenHomePage -->
-        <test-method signature="CheckIfHomePageOpened()[pri:2, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:36:51 EEST" name="CheckIfHomePageOpened" finished-at="2024-09-23T01:36:51 EEST" duration-ms="28" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckIfHomePageOpened -->
-        <test-method is-config="true" signature="Close(org.testng.ITestResult)[pri:0, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:36:51 EEST" name="Close" finished-at="2024-09-23T01:36:53 EEST" duration-ms="1299" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=CheckIfHomePageOpened status=SUCCESS method=HomePageCompTest.CheckIfHomePageOpened()[pri:2, instance:homePage_Test.HomePageCompTest@1df8b5b8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Close -->
-        <test-method is-config="true" signature="OpenHomePage()[pri:0, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:36:53 EEST" name="OpenHomePage" finished-at="2024-09-23T01:36:55 EEST" duration-ms="2790" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenHomePage -->
-        <test-method signature="CheckProductImageDisplayed()[pri:3, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:36:55 EEST" name="CheckProductImageDisplayed" finished-at="2024-09-23T01:36:56 EEST" duration-ms="111" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckProductImageDisplayed -->
-        <test-method is-config="true" signature="Close(org.testng.ITestResult)[pri:0, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:36:56 EEST" name="Close" finished-at="2024-09-23T01:36:57 EEST" duration-ms="1227" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=CheckProductImageDisplayed status=SUCCESS method=HomePageCompTest.CheckProductImageDisplayed()[pri:3, instance:homePage_Test.HomePageCompTest@1df8b5b8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Close -->
-        <test-method is-config="true" signature="OpenHomePage()[pri:0, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:36:57 EEST" name="OpenHomePage" finished-at="2024-09-23T01:37:00 EEST" duration-ms="3325" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenHomePage -->
-        <test-method signature="CheckProductinfoDisplayed()[pri:4, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:37:00 EEST" name="CheckProductinfoDisplayed" finished-at="2024-09-23T01:37:00 EEST" duration-ms="86" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckProductinfoDisplayed -->
-        <test-method is-config="true" signature="Close(org.testng.ITestResult)[pri:0, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:37:00 EEST" name="Close" finished-at="2024-09-23T01:37:01 EEST" duration-ms="1317" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=CheckProductinfoDisplayed status=SUCCESS method=HomePageCompTest.CheckProductinfoDisplayed()[pri:4, instance:homePage_Test.HomePageCompTest@1df8b5b8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Close -->
-        <test-method is-config="true" signature="OpenHomePage()[pri:0, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:37:01 EEST" name="OpenHomePage" finished-at="2024-09-23T01:37:05 EEST" duration-ms="3359" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenHomePage -->
-        <test-method signature="CheckProductNameColorDisplayed()[pri:5, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:37:05 EEST" name="CheckProductNameColorDisplayed" finished-at="2024-09-23T01:37:05 EEST" duration-ms="387" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckProductNameColorDisplayed -->
-        <test-method is-config="true" signature="Close(org.testng.ITestResult)[pri:0, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:37:05 EEST" name="Close" finished-at="2024-09-23T01:37:07 EEST" duration-ms="1280" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=CheckProductNameColorDisplayed status=SUCCESS method=HomePageCompTest.CheckProductNameColorDisplayed()[pri:5, instance:homePage_Test.HomePageCompTest@1df8b5b8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Close -->
-        <test-method is-config="true" signature="OpenHomePage()[pri:0, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:37:07 EEST" name="OpenHomePage" finished-at="2024-09-23T01:37:10 EEST" duration-ms="3007" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenHomePage -->
-        <test-method signature="ClickAddToCartBtn()[pri:6, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:37:10 EEST" name="ClickAddToCartBtn" finished-at="2024-09-23T01:37:10 EEST" duration-ms="223" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ClickAddToCartBtn -->
-        <test-method is-config="true" signature="Close(org.testng.ITestResult)[pri:0, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:37:10 EEST" name="Close" finished-at="2024-09-23T01:37:11 EEST" duration-ms="1224" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ClickAddToCartBtn status=SUCCESS method=HomePageCompTest.ClickAddToCartBtn()[pri:6, instance:homePage_Test.HomePageCompTest@1df8b5b8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Close -->
-        <test-method is-config="true" signature="OpenHomePage()[pri:0, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:37:11 EEST" name="OpenHomePage" finished-at="2024-09-23T01:37:15 EEST" duration-ms="3534" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenHomePage -->
-        <test-method signature="CheckIfProductsAddedToWebSite()[pri:7, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:37:15 EEST" name="CheckIfProductsAddedToWebSite" finished-at="2024-09-23T01:37:17 EEST" duration-ms="2882" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckIfProductsAddedToWebSite -->
-        <test-method is-config="true" signature="Close(org.testng.ITestResult)[pri:0, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:37:17 EEST" name="Close" finished-at="2024-09-23T01:37:19 EEST" duration-ms="1267" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=CheckIfProductsAddedToWebSite status=SUCCESS method=HomePageCompTest.CheckIfProductsAddedToWebSite()[pri:7, instance:homePage_Test.HomePageCompTest@1df8b5b8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Close -->
-        <test-method is-config="true" signature="OpenHomePage()[pri:0, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:37:19 EEST" name="OpenHomePage" finished-at="2024-09-23T01:37:21 EEST" duration-ms="2573" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenHomePage -->
-        <test-method signature="CheckProductItemDetails()[pri:8, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:37:21 EEST" name="CheckProductItemDetails" finished-at="2024-09-23T01:37:22 EEST" duration-ms="424" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckProductItemDetails -->
-        <test-method is-config="true" signature="Close(org.testng.ITestResult)[pri:0, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:37:22 EEST" name="Close" finished-at="2024-09-23T01:37:23 EEST" duration-ms="1329" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=CheckProductItemDetails status=SUCCESS method=HomePageCompTest.CheckProductItemDetails()[pri:8, instance:homePage_Test.HomePageCompTest@1df8b5b8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Close -->
-        <test-method is-config="true" signature="OpenHomePage()[pri:0, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:37:23 EEST" name="OpenHomePage" finished-at="2024-09-23T01:37:27 EEST" duration-ms="3527" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenHomePage -->
-        <test-method signature="CheckScrollDownToElement()[pri:9, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:37:27 EEST" name="CheckScrollDownToElement" finished-at="2024-09-23T01:37:27 EEST" duration-ms="54" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckScrollDownToElement -->
-        <test-method is-config="true" signature="Close(org.testng.ITestResult)[pri:0, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:37:27 EEST" name="Close" finished-at="2024-09-23T01:37:28 EEST" duration-ms="1219" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=CheckScrollDownToElement status=SUCCESS method=HomePageCompTest.CheckScrollDownToElement()[pri:9, instance:homePage_Test.HomePageCompTest@1df8b5b8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Close -->
-        <test-method is-config="true" signature="OpenHomePage()[pri:0, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:37:28 EEST" name="OpenHomePage" finished-at="2024-09-23T01:37:31 EEST" duration-ms="3689" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenHomePage -->
-        <test-method signature="CheckFooterAddedToWebsite()[pri:10, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:37:31 EEST" name="CheckFooterAddedToWebsite" finished-at="2024-09-23T01:37:32 EEST" duration-ms="91" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckFooterAddedToWebsite -->
-        <test-method is-config="true" signature="Close(org.testng.ITestResult)[pri:0, instance:homePage_Test.HomePageCompTest@1df8b5b8]" started-at="2024-09-23T01:37:32 EEST" name="Close" finished-at="2024-09-23T01:37:33 EEST" duration-ms="1246" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=CheckFooterAddedToWebsite status=SUCCESS method=HomePageCompTest.CheckFooterAddedToWebsite()[pri:10, instance:homePage_Test.HomePageCompTest@1df8b5b8] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Close -->
-      </class> <!-- homePage_Test.HomePageCompTest -->
+      </class> <!-- footer_Test.FooterCompTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.openqa.selenium.WebElement;
 
-public class TestMethod extends SettingUpWebDriver{
+public class TestMethod extends WaitingMethod{
 	//assert.NotNull
 		public void CheckNotNull(WebElement webelement,String elementName) {
 			if(webelement==(null)) {

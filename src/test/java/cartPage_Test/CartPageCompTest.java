@@ -18,9 +18,9 @@ import utility.SettingUpWebDriver;
 public class CartPageCompTest extends CartPageComp{
 	
 	@BeforeMethod
-	public void OpenCartPage() {
+	public void OpenCartPage(ITestResult result) throws Exception {
 		SettingUpWebDriver Browser=new SettingUpWebDriver();
-		Browser.OpenBrowser();
+		Browser.OpenBrowser(result);
 	
 	}
 	
@@ -110,7 +110,7 @@ public class CartPageCompTest extends CartPageComp{
 	
 
 	@AfterMethod
-	public void Close(ITestResult result) throws InterruptedException {
+	public void Close(ITestResult result) throws Exception {
      CloseDriver(result);
 }
 	
