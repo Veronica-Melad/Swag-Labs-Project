@@ -6,8 +6,12 @@ import java.util.List;
 
 import org.openqa.selenium.WebElement;
 
+import com.github.javafaker.Faker;
+
+import homePage.HomePageComp;
 import homePage.HomePageWebElement;
 import utility.ConfigerLoader;
+import utility.DataUtils;
 import utility.ExcelUtils;
 import utility.WaitingMethod;
 
@@ -209,6 +213,52 @@ public class LoginPageComp extends LoginPageWebElement {
 	    HomePageWebElement home=new HomePageWebElement();
 	    wait.explicitlyWaitForVisibility(home.GetAllProductsContainer());
 	}
+	
+	public void CheckLoginWithValidDataByJson() throws IOException, InterruptedException {
+		logger.debug("Check Login with valid data by Json");
+		WebElement usernamefield = GetUserNameField();
+		CheckNotNull(usernamefield, "User Name Field");
+		usernamefield.sendKeys(DataUtils.getJsonValue("LoginWithValidData", "UserLogin.UserName"));
+		logger.info("UserName :" + usernamefield.getAttribute("value"));
+
+		WebElement password = GetPasswordField();
+		CheckNotNull(password, "Password Field");
+		password.sendKeys(DataUtils.getJsonValue("LoginWithValidData", "UserLogin.Password"));
+		logger.info("Password :" + password.getAttribute("value"));
+
+		WebElement loginbtn = GetLoginBtn();
+		CheckNotNull(loginbtn, "Login Button");
+		explicitlyWaitForClickability(loginbtn);
+		loginbtn.click();
+
+		HomePageComp homepagecomp = new HomePageComp();
+		homepagecomp.CheckHomePageOpened();
+
+	}
+	 public void checkLoginWithJavaFaker() {
+		 logger.debug("check Login With Java Faker");
+	        Faker faker = new Faker();
+	        String randomUserName = faker.name().username();
+	        String randomPassword = faker.internet().password();
+
+	        WebElement userNameField = GetUserNameField();
+	        CheckNotNull(userNameField, "User Name Field");
+	        userNameField.sendKeys(randomUserName);
+
+	        WebElement passwordField = GetPasswordField();
+	        CheckNotNull(passwordField, "Password Field");
+	        passwordField.sendKeys(randomPassword);
+
+	        WebElement loginButton = GetLoginBtn();
+	        explicitlyWaitForClickability(GetLoginBtn());
+	        loginButton.click();
+
+	        // Add assertion to verify successful login
+	        String expectedUrl = "https://www.saucedemo.com/inventory.html";
+	        String actualUrl = driver.getCurrentUrl();
+	        Checkequals(expectedUrl, actualUrl);
+	 
+	    }
 		
 	
 

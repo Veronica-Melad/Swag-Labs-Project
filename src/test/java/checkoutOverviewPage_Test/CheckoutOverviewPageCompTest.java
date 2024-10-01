@@ -17,10 +17,10 @@ public class CheckoutOverviewPageCompTest extends CheckoutOverviewPageComp{
 	
 
 	@BeforeMethod
-	public void OpenCheckoutOverviewPage()  {
+	public void OpenCheckoutOverviewPage(ITestResult result) throws Exception  {
 		//open swag labs
 		SettingUpWebDriver Browser=new SettingUpWebDriver();
-		Browser.OpenBrowser();
+		Browser.OpenBrowser(result);
 		//enter valid data
 		LoginPageComp loginPage=new LoginPageComp();
 		loginPage.CheckValidData();
@@ -86,7 +86,7 @@ public class CheckoutOverviewPageCompTest extends CheckoutOverviewPageComp{
 
 
 		@AfterMethod
-		public void Close(ITestResult result) throws InterruptedException {
+		public void Close(ITestResult result) throws Exception {
 	     CloseDriver(result);
 	}
 	

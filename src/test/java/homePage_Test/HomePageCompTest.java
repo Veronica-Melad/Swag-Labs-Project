@@ -18,8 +18,8 @@ import utility.ScreenRecord;
 public class HomePageCompTest extends HomePageComp {
 	
 	@BeforeMethod
-	public void OpenHomePage() {
-		OpenBrowser();
+	public void OpenHomePage(ITestResult result) throws Exception {
+		OpenBrowser(result);
 		LoginPageComp loginPage=new LoginPageComp();
 		loginPage.CheckValidData();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -93,7 +93,7 @@ public class HomePageCompTest extends HomePageComp {
 
 
 	@AfterMethod
-	public void Close(ITestResult result) throws InterruptedException {
+	public void Close(ITestResult result) throws Exception {
      CloseDriver(result);
 }
 	

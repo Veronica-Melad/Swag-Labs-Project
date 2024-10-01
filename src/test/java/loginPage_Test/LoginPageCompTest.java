@@ -15,9 +15,9 @@ public class LoginPageCompTest extends LoginPageComp{
 
 	
 	@BeforeMethod
-	public void OpenBrowser() {
+	public void OpenBrowser(ITestResult result) throws Exception {
 		SettingUpWebDriver Browser=new SettingUpWebDriver();
-		Browser.OpenBrowser();
+		Browser.OpenBrowser(result);
 	}
 	
 	
@@ -77,11 +77,19 @@ public class LoginPageCompTest extends LoginPageComp{
 	public void configer() throws InterruptedException {
 		LoginWithConfig();
 	}
+	@Test(priority =8)
+	public void LoginWithJason() throws  IOException, InterruptedException {
+		CheckLoginWithValidDataByJson();
+	}
+	@Test(priority =9)
+	public void checkLoginWithJavaFakerData() throws  IOException, InterruptedException {
+		checkLoginWithJavaFaker();
+	}
 	
 	
 	
 	@AfterMethod
-	public void Close(ITestResult result) throws InterruptedException {
+	public void Close(ITestResult result) throws Exception {
      CloseDriver(result);
 }
 	

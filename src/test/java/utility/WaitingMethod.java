@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 
-public class WaitingMethod extends TestMethod {
+public class WaitingMethod extends SettingUpWebDriver {
 
 	    static ConfigerLoader Load = new ConfigerLoader();
 

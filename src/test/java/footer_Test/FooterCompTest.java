@@ -12,11 +12,11 @@ import utility.SettingUpWebDriver;
 
 public class FooterCompTest extends FooterComp {
 	@BeforeMethod()
-	public void OpenHeader() {
+	public void OpenHeader(ITestResult result) throws Exception {
 		
 		   //Open Swag Labs
 		    SettingUpWebDriver Browser=new SettingUpWebDriver();
-		    Browser.OpenBrowser();
+		    Browser.OpenBrowser(result);
 		    //Open Login Page and enter valid data
 			LoginPageComp LoginPage=new LoginPageComp();
 			LoginPage.CheckValidData();
@@ -63,7 +63,7 @@ public void CheckFooterTextAppeared() {
 
 
 @AfterMethod
-public void Close(ITestResult result) throws InterruptedException {
+public void Close(ITestResult result) throws Exception {
  CloseDriver(result);
 }
 }
