@@ -37,5 +37,5 @@ pipeline {
 post {
   always {
       archiveArtifacts artifacts: 'target/*.jar', allowEmptyArchive: true
-             junit '/target/surefire-reports/junitreports/TEST-*.xml'
-                 archiveArtifacts artifacts: 'ScreenShot/*.png', allowEmptyArchive: true        }    }}
+             junit '/target/surefire-reports/TEST-*.xml'
+                 archiveArtifacts artifacts: 'Screenshot/*.png', allowEmptyArchive: true        }    }}
