@@ -41,7 +41,7 @@ pipeline {
         always {
             archiveArtifacts artifacts: 'target/*.jar', allowEmptyArchive: true
             junit '/target/surefire-reports/junitreports/TEST-*.xml'
-            archiveArtifacts artifacts: 'ScreenShot/*.png', allowEmptyArchive: true
+            archiveArtifacts artifacts: 'ScreenShots/*.png', allowEmptyArchive: true
         }
     }
 }
