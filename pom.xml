@@ -169,19 +169,7 @@
       </properties>
      </profile>
      
-     <profile>
-     <id>LeftSideBar</id>
-     <activation>
-    <activeByDefault>true</activeByDefault>
-        <property>
-       <name>environment</name>
-        <value>LeftSideBar</value>
-         </property>
-       </activation>
-         <properties>
-      <testNGSuite>LeftSideBarTest.xml</testNGSuite>
-      </properties>
-     </profile>
+
      
      
 </profiles>
