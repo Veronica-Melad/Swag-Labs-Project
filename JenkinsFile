@@ -1,75 +1,45 @@
 pipeline {
-    agent any
-
-
+  agent any
     stages {
-//         stage('Checkout') {
-//             steps {
-//                 // Get some code from a GitHub repository
-//                 git 'https://github.com/Veronica-Melad/Swag-Labs-Project.git'
-//                   }
-//           }
-
+//       stage('Checkout') {
+//                steps {
+//                        git 'https://Youssefabdellahmohamed@bitbucket.org/end-2-end-testing/swaglabs.git'
+//                                  }
+//                                      }
         stage('Clean Project') {
              steps {
                        bat 'mvn clean'
-
-                    }}
+                                }        }
         stage('Compile') {
               steps {
-                        bat 'mvn clean compile'
-
-                            }}
+                  bat 'mvn clean compile'
+                          }        }
         stage('Package') {
-              steps {
-                         bat 'mvn clean package' //ensure this is run to crate .jar files
-
-                            }}
-
+                      steps {
+                           bat 'mvn clean package' // Ensure this is run to create .jar files
+                                             }                }
         stage('Login Page Comp Test') {
-                              steps {
-                                  script {
-                                   try {
-                                   bat """
-
-                                      mvn clean test -PLoginPage
-
-                                      """
-
-
-
-                                  }catch(Exception e){
-
-                                  echo "Login Page Comp Test failed: ${e.getMessage()}"
-
-                                  }
-                                 }
-                                   }
-
-         stage('Home Page Comp Test') {
-                                      steps {
-                                          script {
-                                           try {
-                                           bat """
-
-                                              mvn clean test -PHomePage
-
-                                              """
-
-                                          }catch(Exception e){
-
-                                          echo " Home Page Comp Test failed: ${e.getMessage()}"
-
-                                          }
-                                         }
-                                           }
-                                           }
-
-
-  post {
-    always {
+              steps {
+                 script {
+                              try {
+                                        bat """
+                                          mvn clean test -PLoginPage
+                                                  """
+                                  } catch (Exception e) {
+                                       echo "Login Page Comp Test failed: ${e.getMessage()}"
+                                               }                }            }        }
+        stage('Home Page Comp Test') {
+                   steps {
+                         script {
+                                     try {
+                                       bat """
+                                           mvn test -PHomePage
+                                            """
+                                     } catch (Exception e) {
+                                      echo "Home Page Comp Test failed: ${e.getMessage()}"
+                                                         }                }            }        }    }
+post {
+  always {
       archiveArtifacts artifacts: 'target/*.jar', allowEmptyArchive: true
-           junit '/target/surefire-reports/junitreports/TEST-*.xml'
-                archiveArtifacts artifacts: 'ScreenShot/*.png', allowEmptyArchive: true
-                  }}
-}
+             junit '/target/surefire-reports/junitreports/TEST-*.xml'
+                 archiveArtifacts artifacts: 'ScreenShot/*.png', allowEmptyArchive: true        }    }}
