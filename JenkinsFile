@@ -3,7 +3,7 @@ pipeline {
     stages {
       stage('Checkout') {
                steps {
-                       git 'https://github.com/Veronica-Melad/Swag-Labs-Project.git'
+                       git 'https://github.com/Veronica-Melad/Swag-Labs-Project/tree/main'
                                  }
                                      }
         stage('Clean Project') {
