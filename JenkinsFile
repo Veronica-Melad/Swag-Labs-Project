@@ -1,11 +1,11 @@
 pipeline {
   agent any
     stages {
-//       stage('Checkout') {
-//                steps {
-//                        git 'https://Youssefabdellahmohamed@bitbucket.org/end-2-end-testing/swaglabs.git'
-//                                  }
-//                                      }
+      stage('Checkout') {
+               steps {
+                       git 'https://github.com/Veronica-Melad/Swag-Labs-Project.git'
+                                 }
+                                     }
         stage('Clean Project') {
              steps {
                        bat 'mvn clean'
