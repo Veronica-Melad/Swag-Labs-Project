@@ -1,11 +1,7 @@
 pipeline {
   agent any
     stages {
-      stage('Checkout') {
-               steps {
-                       git 'https://github.com/Veronica-Melad/Swag-Labs-Project/tree/main'
-                                 }
-                                     }
+
         stage('Clean Project') {
              steps {
                        bat 'mvn clean'
