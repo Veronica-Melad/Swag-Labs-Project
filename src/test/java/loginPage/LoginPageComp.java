@@ -32,7 +32,7 @@ public class LoginPageComp extends LoginPageWebElement {
 		
 		//URL
 		String URL= driver.getCurrentUrl();
-		 Checkequals(URL,"https://www.saucedemo.com/");
+		 Checkequals(URL,"https://www.saucedemo./");
 		 
 		 //Container
 		  WebElement  Container =  GetLoginContainer();

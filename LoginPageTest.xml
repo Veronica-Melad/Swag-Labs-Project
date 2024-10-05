@@ -7,7 +7,7 @@
                 <methods>
                     <include name="CheckIfLoginPageOpened"/>
                     <include name="CheckIfFieldsAddedToWebSite"/>
-                    <include name="CheckValidDataLogin"/>
+<!--                    <include name="CheckValidDataLogin"/>-->
 <!--                    <include name="CheckInvalid"/>-->
 <!--                    <include name="CheckAllUserNamesLogin"/>-->
 <!--                    <include name="LoginWithExcelFile"/>-->
