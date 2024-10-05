@@ -15,7 +15,7 @@ public class ScreenShots extends SettingUpWebDriver {
 			
 			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 			// Define the directory path based on the class and method name
-			String directoryPath = "./ScreenShots" + testClassName ;
+			String directoryPath = "./ScreenShots/";
 
 			File targetDirectory = new File(directoryPath);
 			if (!targetDirectory.exists()) {
