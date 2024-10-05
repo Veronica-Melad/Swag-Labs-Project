@@ -3,12 +3,12 @@ pipeline {
 
 
     stages {
-        stage('Checkout') {
-            steps {
-                // Get some code from a GitHub repository
-                git 'https://github.com/Veronica-Melad/Swag-Labs-Project.git'
-
-            }}
+//         stage('Checkout') {
+//             steps {
+//                 // Get some code from a GitHub repository
+//                 git 'https://github.com/Veronica-Melad/Swag-Labs-Project.git'
+//                   }
+//           }
 
         stage('Clean Project') {
              steps {
@@ -72,3 +72,4 @@ pipeline {
            junit '/target/surefire-reports/junitreports/TEST-*.xml'
                 archiveArtifacts artifacts: 'ScreenShot/*.png', allowEmptyArchive: true
                   }}
+}
