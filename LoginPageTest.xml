@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/Testing/Depi_1/src/tasks/automation/Test/src/test/java/loginPage_Test/LoginPageCompTest.java">
+        <classes>
+            <class name="loginPage_Test.LoginPageCompTest">
+                <methods>
+                    <include name="CheckIfLoginPageOpened"/>
+                    <include name="CheckIfFieldsAddedToWebSite"/>
+                    <include name="CheckValidDataLogin"/>
+<!--                    <include name="CheckInvalid"/>-->
+<!--                    <include name="CheckAllUserNamesLogin"/>-->
+<!--                    <include name="LoginWithExcelFile"/>-->
+<!--                    <include name="LoginWithExcelFileForAllData"/>-->
+<!--                    <include name="configer"/>-->
+<!--                    <include name="LoginWithJason"/>-->
+<!--                    <include name="checkLoginWithJavaFakerData"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

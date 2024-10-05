@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/Testing/Depi_1/src/tasks/automation/Test/src/test/java/homePage_Test/HomePageCompTest.java"><classes>
+        <class name="homePage_Test.HomePageCompTest">
+            <methods>
+                <include name="CheckHeader"/><include name="CheckIfHomePageOpened"/>
+                <include name="CheckProductImageDisplayed"/>
+<!--                <include name="CheckProductinfoDisplayed"/>-->
+<!--                <include name="CheckProductNameColorDisplayed"/>-->
+<!--                <include name="ClickAddToCartBtn"/>-->
+<!--                <include name="CheckIfProductsAddedToWebSite"/>-->
+<!--                <include name="CheckProductItemDetails"/>-->
+<!--                <include name="CheckScrollDownToElement"/>-->
+<!--                <include name="CheckFooterAddedToWebsite"/>-->
+            </methods>
+        </class>
+    </classes>
+    </test>
+</suite>
